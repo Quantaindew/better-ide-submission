@@ -6,6 +6,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { ThemeProvider } from "@/components/theme-provider";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
+import { EditorProvider } from '@/context/EditorContext';
 // import { GoogleAnalytics } from "nextjs-google-analytics";
 
 // declare global {
@@ -23,14 +24,16 @@ import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 export default function App({ Component, pageProps }: AppProps) {
 
     return (
-        <div className="font-btr-normal min-h-screen">
-            <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-                {/* <GoogleAnalytics trackPageViews gaMeasurementId="G-7H9SL00HCC" /> */}
-                <GoogleAnalytics gaId="G-7H9SL00HCC" />
-                <Component {...pageProps} />
-                <Toaster />
-                <Sonner richColors />
-            </ThemeProvider>
-        </div>
+        <EditorProvider>
+            <div className="font-btr-normal min-h-screen">
+                <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+                    {/* <GoogleAnalytics trackPageViews gaMeasurementId="G-7H9SL00HCC" /> */}
+                    <GoogleAnalytics gaId="G-7H9SL00HCC" />
+                    <Component {...pageProps} />
+                    <Toaster />
+                    <Sonner richColors />
+                </ThemeProvider>
+            </div>
+        </EditorProvider>
     );
 }

@@ -1,0 +1,15 @@
+.shiki {
+  background-color: transparent !important;
+}
+
+.shiki code {
+  display: block;
+  line-height: 1.5;
+  font-size: 14px;
+  padding: 0;
+  overflow-x: auto;
+}
+
+.shiki .line {
+  min-height: 1.5em;
+} 

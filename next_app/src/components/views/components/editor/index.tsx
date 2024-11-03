@@ -19,6 +19,7 @@ import PackageView from "./components/package";
 import TableView from "./components/table";
 import Interact from "./components/interact";
 import History from "./components/history";
+import FloatingChat from "@/components/floating-chat";
 
 function Editor() {
     const globalState = useGlobalState();
@@ -187,6 +188,7 @@ function Editor() {
             {/* <div className="h-[calc(100%-30px)] overflow-scroll ring-1">
 
             </div> */}
+            <FloatingChat />
         </ResizablePanel>}
     </ResizablePanelGroup>
 }

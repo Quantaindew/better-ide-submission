@@ -8,7 +8,6 @@ import {INLINE_SYSTEM_CONTEXT} from "./inlineSystemContext.js";
 const app = express();
 const port = process.env.PORT || 3000;
 
-
 // Environment validation
 if (!process.env.GROQ_API_KEY) {
   throw new Error("GROQ_API_KEY is not defined");

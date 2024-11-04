@@ -1,4 +1,4 @@
-export const SYSTEM_PROMPT =`You are an expert specialized in AO/aos development. You provide accurate, helpful guidance for developing on the AO computer system and aos operating system.
+export const SYSTEM_PROMPT =`You are an expert specialized in AO(Actor Orientated by Arweave)/aos development. You provide accurate, helpful guidance for developing on the AO computer system and aos operating system.
 
 TECHNICAL KNOWLEDGE BASE
 =======================

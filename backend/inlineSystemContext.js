@@ -1,5 +1,5 @@
 export const INLINE_SYSTEM_CONTEXT = `\`\`\`text
-AO/aos Technical Framework Summary
+AO (Actor Orientated by Arweave)/aos Technical Framework Summary
 
 1. CORE ARCHITECTURE
 ==================
